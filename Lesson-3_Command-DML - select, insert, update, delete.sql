@@ -68,6 +68,7 @@ from Students as s, Groups as g
 		<> =	рівне / не рівне
 		!> !<	не більше / не менше
 
+
 	logical and(&&): AND
 	logical or(||):  OR
 */
@@ -169,3 +170,7 @@ WHERE condition;
 */
 delete from Students
 where IsDebtor = 1
+
+delete from Students
+where IsDebtor is not null
+where IsDebtor is null
